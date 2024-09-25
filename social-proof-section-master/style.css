@@ -1,0 +1,106 @@
+@import url("https://fonts.googleapis.com/css2?family=League+Spartan:wght@100..900&display=swap");
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  font-family: "League Spartan", sans-serif;
+}
+
+body {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+
+.main-container {
+  max-width: 900px;
+}
+.main-container .container1 {
+  display: flex;
+}
+.main-container .container1 .left-side {
+  width: 50%;
+}
+.main-container .container1 .left-side .text-container {
+  width: 80%;
+}
+.main-container .container1 .left-side .text-container h1 {
+  color: hsl(300, 43%, 22%);
+  font-weight: 700;
+  font-size: 2rem;
+  padding-right: 2rem;
+  margin-bottom: 1rem;
+}
+.main-container .container1 .left-side .text-container p {
+  color: hsl(303, 10%, 53%);
+  line-height: 1.5;
+}
+.main-container .container1 .right-side {
+  width: 50%;
+}
+.main-container .container1 .right-side .rating {
+  width: 80%;
+  background-color: hsl(300, 24%, 96%);
+  margin: 0.8rem;
+  display: flex;
+  align-items: center;
+  padding: 10px 20px;
+  border-radius: 5px;
+}
+.main-container .container1 .right-side .rating:nth-child(2) {
+  margin-left: 2rem;
+}
+.main-container .container1 .right-side .rating:nth-child(3) {
+  margin-left: 4rem;
+}
+.main-container .container1 .right-side .rating .rating-icons {
+  margin-right: 20px;
+}
+.main-container .container1 .right-side .rating .rating-icons img {
+  width: 12px;
+  height: 12px;
+}
+.main-container .container1 .right-side .rating p {
+  color: hsl(300, 43%, 22%);
+  font-weight: 700;
+  font-size: 14px;
+}
+.main-container .container2 {
+  display: flex;
+  margin-top: 4rem;
+}
+.main-container .container2 .card {
+  width: 31%;
+  background-color: hsl(300, 43%, 22%);
+  padding: 2rem;
+  margin-right: 20px;
+  border-radius: 5px;
+  max-height: 200px;
+}
+.main-container .container2 .card .customer-feedback .customer-profile {
+  display: flex;
+  gap: 10px;
+  align-items: center;
+  margin-bottom: 1rem;
+}
+.main-container .container2 .card .customer-feedback .customer-profile .customer-profile-img img {
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+}
+.main-container .container2 .card .customer-feedback .customer-profile .customer-profile-info h3 {
+  color: hsl(0, 0%, 100%);
+}
+.main-container .container2 .card .customer-feedback .customer-profile .customer-profile-info p {
+  color: hsl(333, 80%, 67%);
+}
+.main-container .container2 .card .customer-feedback .customer-feedback-text {
+  color: hsl(0, 0%, 100%);
+}
+.main-container .container2 .card:nth-of-type(2) {
+  margin-top: 20px;
+}
+.main-container .container2 .card:nth-of-type(3) {
+  margin-top: 40px;
+}/*# sourceMappingURL=style.css.map */
