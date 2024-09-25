@@ -1,0 +1,128 @@
+@import url('https://fonts.googleapis.com/css2?family=League+Spartan:wght@100..900&display=swap');
+
+
+
+$Very_Dark_Magenta: hsl(300, 43%, 22%);
+$Soft_Pink: hsl(333, 80%, 67%);
+
+$Dark_Grayish_Magenta: hsl(303, 10%, 53%);
+$Light_Grayish_Magenta: hsl(300, 24%, 96%);
+$White: hsl(0, 0%, 100%);
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: "League Spartan", sans-serif;
+}
+
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+.main-container {
+    max-width: 900px;
+    
+    .container1 {
+        // background-color: burlywood;
+        display: flex;
+        .left-side {
+            width: 50%;
+            .text-container{
+                width: 80%;
+                h1 {
+                   color: $Very_Dark_Magenta;
+                   font-weight: 700;
+                   font-size: 2rem;
+                   padding-right: 2rem;
+                   margin-bottom: 1rem;
+                }
+                p {
+                   color: $Dark_Grayish_Magenta;
+                   line-height: 1.5;
+                }
+            }
+        }
+        .right-side {
+            width: 50%;
+            .rating {
+                width: 80%;
+                background-color: $Light_Grayish_Magenta;
+                margin: 0.8rem;
+                display: flex;
+                align-items: center;
+                padding: 10px 20px;
+                border-radius: 5px;
+                &:nth-child(2) {
+                    margin-left: 2rem;
+                }
+                &:nth-child(3) {
+                    margin-left: 4rem;
+                }
+                .rating-icons {
+                    margin-right: 20px;
+                    img {
+                        width: 12px;
+                        height: 12px;
+                    }
+                }
+                p {
+                    color: $Very_Dark_Magenta;
+                    font-weight: 700;
+                    font-size: 14px;
+                }
+            }
+        }
+    }
+
+    .container2 {
+        // background-color: rosybrown;
+        display: flex;
+        margin-top: 4rem;
+        .card {
+            width: 31%;
+            background-color: $Very_Dark_Magenta;
+            padding: 2rem;
+            margin-right: 20px;
+            border-radius: 5px;
+            max-height: 200px;
+            .customer-feedback{
+                .customer-profile {
+                    display: flex;
+                    gap: 10px;
+                    align-items: center;
+                    margin-bottom: 1rem;
+                    .customer-profile-img {
+                        img {
+                            width: 50px;
+                            height: 50px;
+                            border-radius: 50%;
+                        }
+                    }
+                    .customer-profile-info {
+                        h3 {
+                            color: $White;
+                        }
+                        p {
+                            color: $Soft_Pink;
+                        }
+                    }
+                }
+                .customer-feedback-text {
+                    color: $White;
+                }
+            }
+            &:nth-of-type(2){
+                // background-color: burlywood;
+               margin-top: 20px;
+            }
+            &:nth-of-type(3) {
+                margin-top: 40px;
+            }
+        }
+        
+    }
+}
